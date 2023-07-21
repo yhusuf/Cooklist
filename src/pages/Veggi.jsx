@@ -40,10 +40,10 @@ function Veggi() {
       {veggi.map((item) =>{
         return(
           <Card key={item.id}>
-            <Link to={'/recipe/' + item.id}>
+            <Lin to={'/recipe/' + item.id}>
               <img src={item.image} alt=''/>
               <h4>{item.title}</h4>
-            </Link>
+            </Lin>
           </Card>
         )
       })}
@@ -87,6 +87,10 @@ const Grid = styled(motion.div)`
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 3rem;
+  @media only screen and (max-width: 600px){
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: 50px;
+  }
 `
 const Card = styled.div`
   img{
@@ -104,4 +108,6 @@ const Card = styled.div`
   margin:0% 20%;
  }
 `
+const Lin= styled(Link)`
+color: black`
 export default Veggi

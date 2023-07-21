@@ -60,6 +60,10 @@ const Grid = styled.div`
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 3rem;
+  @media only screen and (max-width: 600px){
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: 50px;
+  }
 `
 const Card = styled(motion.div)`
   img{

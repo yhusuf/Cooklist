@@ -12,8 +12,8 @@ function Content() {
     backgroundColor="#f7f7f7"
     foregroundColor="#e1dfdf"
   >
-    <rect x="0" y="0" rx="0" ry="0" width="193" height="121" /> 
-    <rect x="0" y="0" rx="0" ry="0" width="193" height="8" />
+    <rect x="206" y="147" rx="10" ry="10" width="193" height="121" /> 
+    <rect x="206" y="273" rx="2" ry="2" width="193" height="8" />
   </ContentLoader>
 
   )
