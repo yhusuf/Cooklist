@@ -5,12 +5,12 @@ import { NavLink } from 'react-router-dom';
 
 function Bar() {
   return (
-    <To to={'/'}>
     <Tbar>
+      <To to={'/'}>
         <GiKnifeFork/>
         <h2 className='tex'>cookList</h2>
+        </To>
     </Tbar>
-    </To>
   )
 }
 const Tbar = styled.div`
@@ -25,11 +25,17 @@ h2{
   font-family: 'Lobster Two', cursive;
   font-size: 25px;
 }
-@media only screen and (max-width: 600px){
-  margin: 13px;
+@media only screen and (max-width: 470px){
+margin: 10px;
 }
 `
 const To = styled(NavLink)`
     text-decoration: none;
+    color: black;
+    display: flex;
+    @media only screen and (max-width: 470px){
+      position: relative;
+      top: 15px;
+    }
 `
 export default Bar

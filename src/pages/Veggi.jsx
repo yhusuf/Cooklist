@@ -78,7 +78,7 @@ h2{
 @media only screen and (max-width: 600px){
   .see .search{
     top: 0px;
-    left:9px;
+    left:2px;
    width: 100%;
   }
 }`

@@ -94,8 +94,8 @@ h2{
 @media only screen and (max-width: 600px){
   .see .search{
     top: 0px;
-    left:9px;
-   width: 500px;
+    left:2px;
+   width: 100%;
   }
 }`
 const Lin= styled(Link)`
