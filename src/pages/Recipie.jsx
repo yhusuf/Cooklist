@@ -25,8 +25,8 @@ function Recipe() {
       [params.id]);
   return (
   <Body>
+     <Bar/>
     <All>
-      <Bar/>
       <div className='see'>
       <Search/>
       </div>
@@ -76,26 +76,23 @@ const All = styled.div`
   box-sizing: border-box;
   font-family: 'Montserrat',sans-serif;
 }
+.tex{
+  position: relative;
+  top: -5px;
+}
 .see{
   align-items: center;
   justify-content: center;
   display: flex;
 }
-.tex{
-  position: relative;
-  top: -5px;
+@media only screen and (max-width: 600px){
+  .see .search{
+    top: 0px;
+    left:2px;
+   width: 100%;
+  }
 }
 @media only screen and (max-width: 600px){
-  .see .search {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-    width: 250px;
-    position: relative;
-    top: 10px;
-    right: -5px;
-  }
   .tex{
     display: flex;
     justify-content: center;
@@ -171,6 +168,9 @@ const Info = styled.div`
   margin-left: 40px;
   @media only screen and (max-width: 600px){
     margin: 0;
+    .ingredients ul{
+      text-decoration: none;
+    }
   }
 `
 export default Recipe

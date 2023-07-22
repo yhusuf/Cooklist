@@ -25,7 +25,7 @@ function Home() {
 }
 
 const Hpage = styled.div`
-background:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(${Image});
+background:linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url(${Image});
 min-height: 100vh;
 background-repeat: no-repeat;
 background-size: cover;

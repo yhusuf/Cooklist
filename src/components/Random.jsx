@@ -29,8 +29,15 @@ function Random() {
 
   useEffect(() => {
     const handleResize = () => {
-      const isMobile = window.matchMedia('(max-width: 700px)').matches;
-      setImagesPerSlide(isMobile ? 3: 4);
+    const isMobile = window.matchMedia('(max-width: 390px)').matches;
+    const isTablet = window.matchMedia('(max-width:700px)').matches;
+    if (isMobile) {
+      setImagesPerSlide(2)
+    }else if (isTablet) {
+      setImagesPerSlide(3)
+    }else {
+      setImagesPerSlide(4)
+    }
     };
     handleResize();
     window.addEventListener('resize', handleResize);
