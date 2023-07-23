@@ -55,7 +55,8 @@ function Random() {
 const Body = styled.body`
 margin: 0% 20%;
 @media only screen and (max-width: 600px){
-  margin: 0px;
+  margin-left: 15px;
+  margin-right: 15px;
 }`
 const All = styled.div`
 *{

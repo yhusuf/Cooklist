@@ -67,7 +67,8 @@ function Recipe() {
 const Body = styled.body`
 margin: 0% 15%;
 @media only screen and (max-width: 600px){
-  margin: 0;
+  margin-left: 15px;
+  margin-right: 15px;
 }`
 const All = styled.div`
 *{
@@ -168,7 +169,7 @@ const Info = styled.div`
   margin-left: 40px;
   @media only screen and (max-width: 600px){
     margin: 0;
-    .ingredients ul{
+    ul li{
       text-decoration: none;
     }
   }
