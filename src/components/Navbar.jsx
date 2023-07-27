@@ -87,18 +87,21 @@ const Bar = styled.div`
 #nav-top h3 {
   display: flex;
   align-items: center;
-  color: whitesmoke;
+  color: #f5eaea;
   margin-left: 9px;
   margin-bottom: 20px;
   margin-left: 40px;
   font-size: 25px;
   position: relative;
+  .gi{
+    top: -10px;
+  }
   font-family: 'Lobster Two', cursive;
   text-decoration: none;
   cursor: pointer;
   svg {
     font-size: 30px;
-    color: #9b9be9;
+    color: #6161e4;
     background-color:transparent;
     padding: 10px;
     border-radius: 5px;

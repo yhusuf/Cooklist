@@ -16,7 +16,7 @@ function Bar() {
 const Tbar = styled.div`
 color:black;
 display: flex;
-margin: 17px;
+margin: 16px;
 font-size: 25px;
 h2{
   position: relative;
