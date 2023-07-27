@@ -50,7 +50,7 @@ function Recipe() {
         </div> )}
         {
           activeTab === 'ingredients' && (
-      <ul>
+      <ul className='ingre'>
         {details.extendedIngredients.map((ingredient) =>
         <li key={ingredient.id}>{ingredient.original}</li>)}
       </ul>
@@ -169,7 +169,7 @@ const Info = styled.div`
   margin-left: 40px;
   @media only screen and (max-width: 600px){
     margin: 0;
-    ul li{
+    .ingre li{
       text-decoration: none;
     }
   }
