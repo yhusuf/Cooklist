@@ -1,6 +1,6 @@
 import React from 'react';
 import ContentLoader from 'react-content-loader';
-
+import styled from 'styled-components';
 function Content() {
   return (
     <ContentLoader 
@@ -19,4 +19,7 @@ function Content() {
   )
 }
 
+const con = styled`
+
+`
 export default Content
